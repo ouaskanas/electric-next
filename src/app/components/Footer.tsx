@@ -12,10 +12,10 @@ export default function Footer() {
               07 56 88 82 75
             </a>
             <a
-              href="mailto:contact@electricien-services.com"
+              href="mailto:contact@electriciendepanneurs.fr"
               className="hover:underline text-sm"
             >
-              contact@electricien-services.com
+              contact@electriciendepanneurs.fr
             </a>
           </div>
           <div className="flex flex-col items-center">
@@ -26,7 +26,7 @@ export default function Footer() {
           </div>
         </div>
         <p className="text-sm text-gray-400">
-          &copy; {new Date().getFullYear()} Électricien PACA – Dépannage & Urgence 24h/24. Tous droits réservés.
+          &copy; {new Date().getFullYear()} electriciendepanneurs.fr – Dépannage & Urgence 24h/24. Tous droits réservés.
         </p>
       </div>
     </footer>

@@ -1,9 +1,26 @@
-"use client";
 import Header from "@/app/components/Header";
 import Footer from "@/app/components/Footer";
 import Image from "next/image";
 import ButtonCall from "@/app/components/CallButton";
 
+export const metadata = {
+  title: "Électricien Dépanneur – Dépannage & Installation Électrique 24h/24",
+  description: "Électricien en région PACA : dépannage rapide, installation, mise aux normes, disjoncteur, tableau électrique, en urgence 24h/24 à Marseille, Toulon, Nice, Aix et Avignon.",
+  keywords: "électricien PACA, dépannage électricité, urgence électricien, installation tableau électrique, mise aux normes, Marseille, Toulon, Nice, Aix-en-Provence, Avignon",
+  robots: "index, follow",
+  alternates: {
+    canonical: "https://electriciendepanneurs.fr/about",
+  },
+  openGraph: {
+    title: "Électricien Dépanneur – Intervention Rapide & Efficace",
+    description:
+        "Besoin d’un électricien fiable et rapide en région PACA ? Nous intervenons 24h/24 pour vos pannes, installations et urgences électriques.",
+    url: "https://electriciendepanneurs.fr/about",
+    siteName: "Électricien Dépanneur",
+    type: "website",
+    locale: "fr_FR",
+  },
+};
 export default function AboutPage() {
   return (
     <>

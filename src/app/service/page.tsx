@@ -5,23 +5,21 @@ import Header from "@/app/components/Header";
 import ButtonCall from "@/app/components/CallButton";
 
 export const metadata = {
-  title: "Nos Services Électriques - Électricien PACA",
-  description:
-    "Découvrez nos prestations professionnelles en électricité : dépannage urgent, installation, mise aux normes, tableaux électriques. Intervention rapide dans toute la région PACA.",
-  keywords:
-    "électricien PACA, dépannage électrique, installation électrique, mise aux normes, tableau électrique, urgence électricité",
+  title: "Électricien Dépanneur – Dépannage & Installation Électrique 24h/24",
+  description: "Électricien en région PACA : dépannage rapide, installation, mise aux normes, disjoncteur, tableau électrique, en urgence 24h/24 à Marseille, Toulon, Nice, Aix et Avignon.",
+  keywords: "électricien PACA, dépannage électricité, urgence électricien, installation tableau électrique, mise aux normes, Marseille, Toulon, Nice, Aix-en-Provence, Avignon",
   robots: "index, follow",
   alternates: {
-    canonical: "https://electricien-services.com/services",
+    canonical: "https://electriciendepanneurs.fr/service",
   },
   openGraph: {
-    title: "Nos Services - Électricien PACA",
+    title: "Électricien Dépanneur – Intervention Rapide & Efficace",
     description:
-      "Prestations professionnelles d’électricité : intervention 24h/24 pour panne, installation, rénovation et conformité électrique à Marseille, Toulon, Nice, Aix, Avignon.",
-    url: "https://electricien-services.com/services",
-    siteName: "Électricien PACA",
+        "Besoin d’un électricien fiable et rapide en région PACA ? Nous intervenons 24h/24 pour vos pannes, installations et urgences électriques.",
+    url: "https://electriciendepanneurs.fr/service",
+    siteName: "Électricien Dépanneur",
+    type: "website",
     locale: "fr_FR",
-    type: "article",
   },
 };
 
