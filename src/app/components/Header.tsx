@@ -6,6 +6,7 @@ import Image from "next/image";
 export default function Header() {
   const url = process.env.NEXT_PUBLIC_URL;
   const [isOpen, setIsOpen] = useState(false);
+  const [isDropDown, setDropDown] = useState(false);
 
   return (
     <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-300 dark:border-gray-600 shadow-sm">
@@ -44,11 +45,45 @@ export default function Header() {
                 À propos
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link href="/service" className="block py-2 px-3 text-gray-800 hover:text-[#ff6600] md:p-0 dark:text-white dark:hover:text-orange-400">
                 Services
               </Link>
-            </li>
+            </li> */}
+             <li className="relative">
+                <button
+                    onClick={() => setDropDown(!isDropDown)}
+                    className="flex items-center py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-orange-700 md:p-0 dark:text-white dark:hover:bg-gray-700 md:dark:hover:bg-transparent"
+                >
+                  Nos Services ▾
+                </button>
+                {isDropDown && (
+                    <div className="absolute left-0 mt-2 w-64 bg-white rounded-md shadow-lg z-10 dark:bg-gray-800">
+                      <ul className="py-2 text-sm text-gray-700 dark:text-gray-200">
+                        <li>
+                          <Link href="/service/panne" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+                            Recherche de panne électrique
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/service/mise-en-norme" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+                             Mise aux normes électriques
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/service/remplacement" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+                            Remplacement tableau électrique
+                          </Link>
+                        </li>
+                        <li>
+                          <Link href="/service/installation" className="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700">
+                            Installation complète
+                          </Link>
+                        </li>
+                      </ul>
+                    </div>
+                )}
+              </li>
             <li>
               <Link href="/contact" className="block py-2 px-3 text-gray-800 hover:text-[#ff6600] md:p-0 dark:text-white dark:hover:text-orange-400">
                 Contact
