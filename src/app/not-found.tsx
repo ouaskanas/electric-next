@@ -15,13 +15,13 @@ export default function NotFoundPage() {
           Oups ! Cette page est introuvable
         </h2>
         <p className="text-gray-300 mb-6 max-w-md">
-          Il semble que la page que vous cherchez n'existe pas ou a été déplacée.
+          Il semble que la page que vous cherchez n&#39;existe pas ou a été déplacée.
         </p>
         <Link
           href="/"
           className="inline-flex items-center px-6 py-3 bg-yellow-500 text-white font-medium rounded-full hover:bg-sky-600 transition"
         >
-          <FaHome className="mr-2" /> Retour à l'accueil
+          <FaHome className="mr-2" /> Retour à l&#39;accueil
         </Link>
       </main>
 
